@@ -62,7 +62,7 @@ int main(int argc, char** argv){
 
   // Check if the robot reached its goal
   if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
-    ROS_INFO("Hooray, the robot reaced the drop-off position");
+    ROS_INFO("Hooray, the robot reached the drop-off position");
 }
   else {
     ROS_INFO("The robot failed to reach the drop-off position");
