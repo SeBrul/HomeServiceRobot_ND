@@ -5,7 +5,7 @@
 > Combining SLAM and Navigation into a service robot that autonomously transports objects from A to B.
 > Capstone Project of the Robotics Software Engineer Nanodegree Programme
 
-With the help of the ROS system, a digital service robot based on the turtlebot is created. The robot takes its pick-up destination in the form of a coordinate input, navigates towards it, picks it up and brings it back to its original position. The problem is split in mapping, localization & navigation and service functions.
+With the help of the ROS system, a digital service robot based on the turtlebot is created. The robot takes its pick-up destination in the form of a coordinate input, navigates towards it, starts the pick-up process, navigates towards its original position and starts the drop-off process. The problem is split in mapping, localization & navigation and service functions.
 
 ![](/images/PickupDropoff.gif)
 ---
