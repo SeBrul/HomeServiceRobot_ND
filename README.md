@@ -21,7 +21,7 @@ With the help of the ROS system, a digital service robot based on the turtlebot 
 ## Built With
 The project is built primarily on the following official ROS packages. 
 
-- [gmapping](http://wiki.ros.org/turtlebot_teleop)
+- [gmapping](http://http://wiki.ros.org/gmapping)
 - [turtlebot_teleop](http://wiki.ros.org/turtlebot_teleop)
 - [turtlebot_rviz_launcher](http://wiki.ros.org/turtlebot_rviz_launchers)
 - [turtlebot_gazebo](wiki.ros.org/turtlebot_gazebo)
@@ -46,12 +46,12 @@ First, the Simultaneous Localization and Mapping (**SLAM**) is implemented from 
 ```
 
 ## Localization and Navigation
-The next goal for the robot is to find its way to a defined set of coordinates and orient itself with respect to them. This is the next step towards an autonomous pick-up and drop-off service. This part is based on the previously implemented SLAM algorithm. The localization is performed with the ROS Navigation stack, which is based on the Dijkstra algorithm, a variant of the **Uniform Cost Search** algorithm. With the help of the Adaptive Monte Carlo Localization (**AMCL**) the robot is able to localize itself.
+The next goal for the robot is to find its way to a defined set of coordinates and orient itself with respect to them. This is the next step towards an autonomous pick-up and drop-off service. The localization is performed with the ROS Navigation stack, which is based on the Dijkstra algorithm, a variant of the **Uniform Cost Search** algorithm. With the help of the Adaptive Monte Carlo Localization (**AMCL**) the robot is able to localize itself.
 
 ![](/images/Localization.png?raw=false)
 
 ```javascript
-./src/test_slam
+./src/test_navigation
 ```
 
 ## Service Functions
